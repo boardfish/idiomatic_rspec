@@ -1,0 +1,3 @@
+class Guitar
+    
+end
