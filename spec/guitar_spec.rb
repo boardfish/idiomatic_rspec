@@ -6,11 +6,11 @@ RSpec.describe Guitar do
     subject { guitar.strum(string) }
 
     shared_context 'when tuning is default' do
-      let(:guitar) { Guitar.new }
+      let(:guitar) { described_class.new }
     end
 
     shared_context 'when tuning is drop D' do
-      let(:guitar) { Guitar.new(tuning: { 0 => -2 }) }
+      let(:guitar) { described_class.new(tuning: { 0 => -2 }) }
     end
 
     context 'when the first string is strummed in default tuning' do
